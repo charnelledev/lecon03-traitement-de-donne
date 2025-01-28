@@ -24,7 +24,10 @@ let letterIndex = 0;
             wordIndex =0 ;
             letterIndex = 0;
             loop();
-         }else if (letterIndex <array[wordIndex].length){
+            return
+         }
+
+            if (letterIndex <array[wordIndex].length){
                createLetter();
                letterIndex++;
                loop();
