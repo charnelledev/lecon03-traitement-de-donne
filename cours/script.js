@@ -1,16 +1,16 @@
-let string = "hello world";
-console.log(typeof(string));
+// let string = "hello world";
+// console.log(typeof(string));
 
-let number = 29;
-console.log(typeof(number));
+// let number = 29;
+// console.log(typeof(number));
 
-let boolean = true;
-let object_null = null;
-console.log(object_null);
+// let boolean = true;
+// let object_null = null;
+// console.log(object_null);
 
 
-let array = [1,2,3,4,5];
-console.log(typeof(array));
+// let array = [1,2,3,4,5];
+// console.log(typeof(array));
 
 
 //let maVariable;//type underfined
@@ -22,8 +22,8 @@ console.log(typeof(array));
 //-tableau -01--
 let array2 = ["bafou", "batie","bafang","bamenda"];
 
-console.log(array2 [0][2] );//f
-console.log(array2.length);//4
+// console.log(array2 [0][2] );//f
+// console.log(array2.length);//4
 
 
 //--objet
@@ -35,12 +35,12 @@ let person ={
     country:"cameroon",
     isnull:null
 }
-console.log(person.name);
-console.log(person.country[1]);
+// console.log(person.name);
+// console.log(person.country[1]);
 
 
 let nom ='myra'
-console.log(nom.length);
+// console.log(nom.length);
 
 
 
@@ -51,8 +51,8 @@ let array3 = ["bafou",42,true,"bafang","bamenda",null,{
     name:"myra",
     age:42,
 }];
-console.log(array3[6].age);
-console.log(array3[6].name);
+// console.log(array3[6].age);
+// console.log(array3[6].name);
 
 
 
@@ -71,8 +71,8 @@ let objet = {
     admin: false
     }
 
-    console.log(typeof(objet));
-    console.log(objet.technos[2]);
+    // console.log(typeof(objet));
+    // console.log(objet.technos[2]);
 
 
 
@@ -108,18 +108,18 @@ let data = [
     },
   ];
 
-  console.log(data[2].technos);
+  // console.log(data[2].technos);
   
 
   //les structures de controle
 
-  if(data[0].age>data[1].age){
-    console.log(data[0].firstname + " est plus age que "+ data[1].firstname);
+  // if(data[0].age>data[1].age){
+  //   console.log(data[0].firstname + " est plus age que "+ data[1].firstname);
     
-  }else{
-    console.log(data[0].firstname + "est plus jeune que " + data[1].firstname);
+  // }else{
+  //   console.log(data[0].firstname + "est plus jeune que " + data[1].firstname);
     
-  }
+  
 
 //while
 
@@ -131,21 +131,39 @@ let data = [
 // }
 
 
-document.body.addEventListener("click",(e)=>{
-    console.log(e.target);
-    
+// document.body.addEventListener("click",(e)=>{
+//   console.log(e.target);
+  
 
-if(e.target.id === "javascript"){
-    document.body.style.backgroundColor = "yellow";
-}else if(e.target.id === "php"){
-    document.body.style.backgroundColor = "purple";
-}else if(e.target.id === "python"){
-    document.body.style.backgroundColor = "blue";
-}else if(e.target.id === "laravel"){
-    document.body.style.backgroundColor = "red";
-}
-});
+// if(e.target.id === "javascript"){
+//   document.body.style.backgroundColor = "yellow";
+// }else if(e.target.id === "php"){
+//   document.body.style.backgroundColor = "purple";
+// }else if(e.target.id === "python"){
+//   document.body.style.backgroundColor = "blue";
+// }else if(e.target.id === "laravel"){
+//   document.body.style.backgroundColor = "red";
+// }
+// });
 
 
     
+    //---methode sur les tableaux en javasript
+
+// 1. push():ajouter un ou plusieurs elements a la fin d'un tableau et retourner la nouvelle longeur du tableau. 
+    let fruits1 = ["banane","pomme"];
+    fruits1.push("orange");
+    console.log(fruits1);
+
+
+
+    let fruits2 = ["banane","pomme","orange"];
+    fruits2.pop();
+    console.log(fruits2);
+
+
     
+    let fruits3 = ["banane","pomme","orange"];
+     fruits3.shift();
+     console.log(fruits3);
+     
