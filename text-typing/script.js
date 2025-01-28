@@ -20,7 +20,11 @@ let letterIndex = 0;
  }
     const loop = () =>{
         setTimeout(()=>{
-            if (letterIndex <array[wordIndex].length){
+         if (wordIndex>=array.length){
+            wordIndex =0 ;
+            letterIndex = 0;
+            loop();
+         }else if (letterIndex <array[wordIndex].length){
                createLetter();
                letterIndex++;
                loop();
@@ -29,12 +33,10 @@ let letterIndex = 0;
                 wordIndex++;
                 letterIndex = 0;
                 loop();
-                // if (wordIndex<array.length){
-                //     loop();
-                // }
+                
                 },2000);
             }
-           },60);
+           },50);
            }
     loop()
 
