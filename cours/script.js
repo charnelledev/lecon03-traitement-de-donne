@@ -183,7 +183,8 @@ function dateparser(chaine) {
     hour: "numeric",
     minute: "numeric",
     second: "numeric",
-    
+    weekday:"long"
+
   });
   return dateFr;
 }
